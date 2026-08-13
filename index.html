@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>SatuBitLebihDekat | SBLD</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="stage">
+    <div class="container" id="textContainer">
+        <div class="line-1" id="line1">SBLD</div>
+        <div class="line-2" id="line2">Networks</div>
+    </div>
+    <div class="popup-menu" id="menuPopup"><button data-filter="shadow-bottom-right" class="active"><span>↘</span></button><button data-filter="shadow-top-right"><span>↗</span></button><button data-filter="shadow-top-left"><span>↖</span></button><button data-filter="shadow-bottom-left"><span>↙</span></button></div>
+</div><button class="text-panel-toggle" id="togglePanelBtn">Control</button>
+<div class="text-panel" id="textPanel"><button class="close-panel" id="closePanelBtn">✕</button>
+    <h3>Edit text</h3>
+    <div class="field-group"><label for="inputLine1">Line 1</label><input type="text" id="inputLine1" value="BE" placeholder="ex: BE" maxlength="20"></div>
+    <div class="field-group"><label for="inputLine2">Line 2</label><input type="text" id="inputLine2" value="HAPPY" placeholder="ex: HAPPY" maxlength="20"></div>
+    <hr class="divider">
+    <div class="field-group"><label for="sizeRange">Text size</label>
+        <div class="size-control"><input type="range" id="sizeRange" min="5.5" max="20" step="0.5" value="11"><span class="size-value" id="sizeDisplay">11rem</span></div>
+    </div>
+    <hr class="divider">
+    <div class="field-group"><label>Shadow color</label>
+        <div class="color-control">
+            <div class="color-preview" id="colorPreview" style="background:#000000;"></div><span class="color-hex" id="colorHex">#000000</span>
+        </div>
+        <div class="color-picker-container">
+            <div class="color-picker" id="colorPicker">
+                <div class="color-square" id="colorSquare">
+                    <div class="color-overlay1">
+                        <div class="color-overlay2">
+                            <div class="color-selector-outer" id="colorSelector">
+                                <div class="color-selector-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hue-bar" id="hueBar">
+                    <div class="hue-selector" id="hueSelector">
+                        <div class="hue-arrow-left"></div>
+                        <div class="hue-arrow-right"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="action-row"><button class="primary" id="applyTextBtn">Apply</button><button id="resetTextBtn">Reset</button></div>
+</div><svg class="svg-filters" aria-hidden="true" id="svgFilters">
+    <defs id="svgDefs"></defs>
+</svg>
+
+<div class="copy">1BitLebihDekat</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
